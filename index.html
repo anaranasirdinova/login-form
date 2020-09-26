@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row no-gutters mt-5">
+                <div class="col-lg-5 col-xl-5 col-md-0 col-sm-0 left-border border-shadow">
+                    <img src="./img/picture.svg" alt="Picture">
+                </div>
+
+                <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12 background-white right-border border-shadow">
+                    <form action="#" name="registration" class="registration-form">
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Name</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control form-control-lg custom-input" name="fullname" placeholder="Luke Skywalker">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Gender</label>
+                            <div class="col-sm-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="genders" id="male" value="male" checked>
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="genders" id="female" value="female">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Date of Birth</label>
+                            <div class="col-sm-9">
+                                <input type="date" class="form-control form-control-lg custom-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Email</label>
+                            <div class="col-sm-9">
+                                <input type="text" name="email" class="form-control form-control-lg custom-input" placeholder="lukeskywalker@galaxy.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">City</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control form-control-lg custom-input" placeholder="Moisture Farm">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Country</label>
+                            <div class="col-sm-9">
+                                <select class="form-control form-control-lg custom-input" name="country">
+                                    <option value="Tatooine" selected>Tatooine</option>
+                                    <option value="Takodana">Takodana</option>
+                                    <option value="Teth">Teth</option>
+                                    <option value="Toydaria">Toydaria</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row mt-5 mb-4">
+                            <label class="col-sm-3 col-form-label">Subscription</label>
+                            <div class="col-sm-9">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="subscription" id="bronze" value="bronze" checked>
+                                    <label class="form-check-label bronze" for="bronze">Bronze</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="subscription" id="silver" value="silver">
+                                    <label class="form-check-label silver" for="silver">Silver</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="subscription" id="gold" value="gold">
+                                    <label class="form-check-label gold" for="gold">Gold</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9 text-sm-center">
+                                <button type="button" class="btn btn-lg btn-cancel">Cancel</button>&nbsp;
+                                <button type="submit" class="btn btn-lg btn-save">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQuery and Validation Plugin -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        
+        <!-- Custom -->
+        <script src="./main.js"></script>
+        <link rel="stylesheet" href="./style.css">
+    </body>
+</html>
